@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
@@ -7,20 +8,23 @@ import {
 } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaTwitter />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaLinkedinIn />, link: "https://twitter.com/" },
-  { Social: <FaPinterestP />, link: "https://www.pinterest.com/" },
+ {
+  Social: <FaLinkedinIn />,
+  link: "https://www.linkedin.com/in/sajidjaber",
+ },
 ];
 
 const Social = () => {
   return (
-    <div className="nav social-icons justify-content-center text-sm-center justify-content-md-end">
+    <div className="nav social-icons justify-content-center text-sm-center justify-content-md-end
+    text-3xl mx-2 // Makes icons larger with spacing
+    ">
+      
       {SocialShare.map((val, i) => (
-        <a key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
+
+        <Link key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
           {val.Social}
-        </a>
+        </Link>
       ))}
     </div>
   );

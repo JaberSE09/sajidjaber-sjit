@@ -8,6 +8,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../public/assets/scss/main.scss";
 import { Nunito } from "next/font/google";
+
+import "@/public/assets/scss/main/globals.scss";
+
 const nunitoFont = Nunito({
   weight: ["200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin"],
