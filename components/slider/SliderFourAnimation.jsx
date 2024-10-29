@@ -8,7 +8,8 @@ const Slider = () => {
         id="home"
         className="home-banner overlay overlay-65 scrollSpysection"
         style={{
-          backgroundImage: `url(${"/img/banner/bg-3.jpg"})`,
+          backgroundImage: `url(${"/img/banner/fullstack.jpg"})`,
+          backgroundSize: "contain",
         }}
       >
         <div className="top-style rotate-both-side dark-shape">
@@ -41,7 +42,7 @@ const Slider = () => {
         <div className="frame-layout__particles"></div>
         {/* End particle animation */}
         <div className="container">
-          <div className="row align-items-center full-screen">
+          <div className="row full-screen">
             <div className="col-lg-12">
               <div className="hb-typo text-center">
                 <h6 data-aos="fade-up" data-aos-duration="1200">
@@ -53,17 +54,17 @@ const Slider = () => {
                   data-aos-duration="1200"
                   data-aos-delay="100"
                 >
-                  Miladra Narzo
+                  Sajid Jaber
                 </h1>
                 <div>
-                  <div className="nav ht-list justify-content-center">
+                  <div className="nav ht-list justify-content-center co;lo">
                     <span
                       className="font-alt"
                       data-aos="fade-up"
                       data-aos-duration="1200"
                       data-aos-delay="150"
                     >
-                      Web Designer
+                     Full Stack Web Designer
                     </span>{" "}
                     <span
                       className="font-alt"
@@ -71,7 +72,7 @@ const Slider = () => {
                       data-aos-duration="1200"
                       data-aos-delay="200"
                     >
-                      Web Developer
+                      App Developer
                     </span>
                     <span
                       className="font-alt"

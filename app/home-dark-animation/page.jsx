@@ -1,4 +1,3 @@
-import Header from "@/components/header/Header";
 import Slider from "@/components/slider/SliderFourAnimation";
 import About from "@/components/about/AboutDarkAnimation";
 import Service from "@/components/service/ServiceAnimation";
@@ -8,14 +7,15 @@ import Testimonial from "@/components/testimonial/TestimonialAnimation";
 import Blog from "@/components/blog/BlogAnimation";
 import Contact from "@/components/contact/ContactAnimation";
 import Footer from "@/components/footer/FooterAnimation";
+import HeaderFluid from "@/components/header/HeaderFluid";
 
 export const metadata = {
-  title: "Home Dark Animation || React Personal Portfolio Template",
+  title: "Portfolio - Sajid Jaber",
 };
 const HomeFour = () => {
   return (
     <div className="home-dark">
-      <Header />
+      <HeaderFluid />
       {/* End Header Section */}
       <Slider />
       {/* End Banner Section */}
