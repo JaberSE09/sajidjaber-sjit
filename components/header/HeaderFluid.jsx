@@ -51,9 +51,9 @@ const HeaderFluid = () => {
             <Link href="/">
               <Image
                 width={122}
-                height={35}
+                height={70}
                 className="navbar-brand"
-                src="/img/logo/logo-light.svg"
+                src="/img/logo/logosjit.png"
                 alt="brand logo"
               />
             </Link>
@@ -83,7 +83,7 @@ const HeaderFluid = () => {
                 <Image
                   width={122}
                   height={35}
-                  src="/img/logo/logo-light.svg"
+                  src="/img/logo/logosjit.png"
                   alt="brand"
                 />
               </Link>
