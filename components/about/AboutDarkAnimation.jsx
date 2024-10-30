@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -14,8 +15,8 @@ const About = () => {
               width={900}
               height={1099}
               style={{ height: "fit-content" }}
-              src="/img/about/about-2.jpg"
-              alt="smiling a girl"
+              src="/img/about/skills.jpg"
+              alt="skills"
             />
           </div>
         </div>
@@ -27,10 +28,10 @@ const About = () => {
           data-aos-dealay="100"
         >
           <div className="typo-box about-me">
-            <h3>Miladra Narzo</h3>
+            <h3>Sajid Jaber</h3>
             <h5>
-              A Lead <span className="color-theme">App Developer</span> based in{" "}
-              <span className="color-theme">Canada</span>
+              A Lead <span className="color-theme">Next JS Full Stack Developer</span> based in{" "}
+              <span className="color-theme">USA</span>
             </h5>
             <p>
               I design and develop services for customers of all sizes,
@@ -40,55 +41,17 @@ const About = () => {
               interactions. Check out my Portfolio
             </p>
             <div className="row about-list">
-              <div className="col-md-6">
-                <div className="media">
-                  <label>Birthday</label>
-                  <p>4th april 1991</p>
-                </div>
-                <div className="media">
-                  <label>Age</label>
-                  <p>22 Yr</p>
-                </div>
-                <div className="media">
-                  <label>Residence</label>
-                  <p>Canada</p>
-                </div>
-                <div className="media">
-                  <label>Address</label>
-                  <p>California, USA</p>
-                </div>
-              </div>
-              {/* End .col */}
-
-              <div className="col-md-6">
-                <div className="media">
-                  <label>E-mail</label>
-                  <p>info@domain.com</p>
-                </div>
-                <div className="media">
-                  <label>Phone</label>
-                  <p>820-885-3321</p>
-                </div>
-                <div className="media">
-                  <label>Skype</label>
-                  <p>skype.0404</p>
-                </div>
-                <div className="media">
-                  <label>Freelance</label>
-                  <p>Available</p>
-                </div>
-              </div>
               {/* End .col */}
             </div>
             {/* End .row */}
             <div className="btn-bar">
-              <a
+              <Link
                 className="px-btn px-btn-theme"
-                href="/img/resume.png"
+                href="/resume/resume.pdf"
                 download
               >
                 Download CV
-              </a>
+              </Link>
             </div>
           </div>
           {/* End .about me */}
