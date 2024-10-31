@@ -36,7 +36,7 @@ const ServiceContent = [
   {
     icon: <IoApps />,
     title: "App Development",
-    descriptions: `I offer custom app development, building fast, secure, and user-friendly mobile and web applications.`,
+    descriptions: `I create fast, secure, and user-friendly mobile and web apps with seamless integration, offering complete support from design to deployment for a smooth user experience across devices.`,
     animationDealy: "500",
   },
 ];
