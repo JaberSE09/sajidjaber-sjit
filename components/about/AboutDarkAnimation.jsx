@@ -48,6 +48,7 @@ const About = () => {
               <Link
                 className="px-btn px-btn-theme"
                 href="/resume/resume.pdf"
+                target="_blank"
                 download
               >
                 Download CV
