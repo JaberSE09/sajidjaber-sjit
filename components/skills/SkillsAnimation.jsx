@@ -119,7 +119,7 @@ const Skills = () => {
           <div className="sm-title">
             <h6 className="font-weight-bold">Other Skills</h6>
           </div>
-          <ul className="skill-list text-left">
+          <ul className="skill-list">
             <li>Agile/Scrum</li>
             <li>Unit & Integration Testing (Jest, Cypress)</li>
             <li>Collaboration & Communication</li>
