@@ -1,17 +1,20 @@
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaGithub,
   FaPinterestP,
 } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaTwitter />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaLinkedinIn />, link: "https://twitter.com/" },
-  { Social: <FaPinterestP />, link: "https://www.pinterest.com/" },
+
+  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/sajidjaber" },
+  {
+    Social: <FaGithub />,
+    link: "https://www.github.com/jaberse09",
+  }
 ];
 
 const Footer = () => {
@@ -19,7 +22,7 @@ const Footer = () => {
     <>
       <div className="row align-items-center">
         <div className="col-md-6 my-2">
-          <div className="nav justify-content-center text-center text-md-left justify-content-md-start">
+          <div className="nav flex justify-content-center text-center text-md-left justify-content-md-start">
             {SocialShare.map((val, i) => (
               <a key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
                 {val.Social}
@@ -33,13 +36,13 @@ const Footer = () => {
         <div className="col-md-6 my-2 text-center text-md-right">
           <p>
             © {new Date().getFullYear()} copyright{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes /portfolio"
+            <Link
+              href="sajidjaber.com"
               target="_blank"
               rel="noreferrer"
             >
-            ib-themes{" "}
-            </a>
+              Sajid Jaber
+            </Link>
             all right reserved
           </p>
         </div>
