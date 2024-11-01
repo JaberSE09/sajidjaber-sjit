@@ -127,8 +127,8 @@ const HomeFour = () => {
               <div className="contact-info">
                 <div
                   className="sm-title"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1200"
                 >
                   <h4 className="font-alt">Get in touch</h4>
                   <p>
@@ -139,9 +139,9 @@ const HomeFour = () => {
 
                 <div
                   className="media"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="50"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1200"
+                  // data-aos-delay="50"
                 >
                   <div className="icon">
                     <i className="ti-map"></i>
