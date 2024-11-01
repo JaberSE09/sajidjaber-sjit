@@ -11,6 +11,7 @@ import HeaderFluid from "@/components/header/HeaderFluid";
 
 export const metadata = {
   title: "Portfolio - Sajid Jaber",
+  description: "Portfolio - Sajid Jaber",
 };
 const HomeFour = () => {
   return (
@@ -79,15 +80,15 @@ const HomeFour = () => {
       </section>
       {/* End Portfolio */}
 
-      <div className="section testimonial">
+      {/* <div className="section testimonial">
         <div className="container">
           <Testimonial />
         </div>
-      </div>
+      </div> */}
       {/* End testimonial */}
 
       {/* Blog */}
-      <section id="blog" className="section gray-bg scrollSpysection">
+      {/* <section id="blog" className="section gray-bg scrollSpysection">
         <div className="container">
           <div className="row justify-content-center section-title text-center">
             <div className="col-lg-7">
@@ -99,10 +100,9 @@ const HomeFour = () => {
               </p>
             </div>
           </div>
-          {/* End .row */}
           <Blog />
         </div>
-      </section>
+      </section> */}
       {/*  End Blog */}
 
       {/* Contact */}

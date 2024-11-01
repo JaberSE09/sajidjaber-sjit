@@ -2,20 +2,45 @@
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  // Reset form
+  const resetForm = () => {
+    document.getElementById("contact-form").reset();
+  };
+  const sendEmail = async (e) => {
+    e.preventDefault();
 
-  const onSubmit = (data, e) => {
-    e.target.reset();
-    console.log("Message submited: " + JSON.stringify(data));
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      comment: e.target.comment.value
+    };
+
+    try {
+      const response = await fetch("/api/sendemail/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Email sent successfully");
+        resetForm();
+      } else {
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
   };
 
+  const {
+    register,
+    formState: { errors },
+  } = useForm();
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form id="contact-form"  onSubmit={sendEmail}>
         <div className="row">
           <div className="col-md-6">
             <div
@@ -25,6 +50,8 @@ const Contact = () => {
             >
               <input
                 type="text"
+                id="name"
+                name="name"
                 className="form-control"
                 placeholder="Full name"
                 {...register("name", { required: true })}
@@ -48,6 +75,8 @@ const Contact = () => {
                 type="email"
                 className="form-control"
                 placeholder="Email address"
+                id="email"
+                name="email"
                 {...register(
                   "email",
                   {
@@ -79,6 +108,8 @@ const Contact = () => {
                 type="text"
                 className="form-control"
                 placeholder="Subject"
+                id="subject"
+                name="subject"
                 {...register("subject", { required: true })}
               />
               <label className="form-label">Subject</label>
@@ -98,6 +129,8 @@ const Contact = () => {
             >
               <textarea
                 rows="4"
+                id="comment"
+                name="comment"
                 className="form-control"
                 placeholder="Type comment"
                 {...register("comment", { required: true })}
