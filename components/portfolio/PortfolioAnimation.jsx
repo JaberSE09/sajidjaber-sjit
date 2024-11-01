@@ -25,9 +25,15 @@ const AllPortfolioContent = [
     alterText: "Saint Michael Vending",
     portfolioLink: "https://saintmichaelvending.com/",
     githubLink: "https://github.com/JaberSE09/banking",
-
-
-
+  },
+  {
+    categories: ["Personal", "All"],
+    img: "/img/portfolio/sajidjaber.png",
+    title: "Next Js Portfolio",
+    subTitle: "Sajid Jaber Personal Portfolio",
+    alterText: "Sajid Jaber Personal Portfolio",
+    portfolioLink: "https://sajidjaber.com",
+    githubLink: "https://github.com/JaberSE09/sajidjaber-sjit",
   }
 ];
 
