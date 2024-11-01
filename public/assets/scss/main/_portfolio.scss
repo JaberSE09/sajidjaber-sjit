@@ -122,6 +122,27 @@
       font-weight: 600;
     }
   }
+  .github-icon {
+    position: absolute;
+    bottom: 16px;
+    right: 90px;
+    @include transition(ease all 0.55s);
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 55px;
+    background: $px-white;
+    text-align: center;
+    color: $px-theme;
+    text-decoration: none;
+    font-size: 26px;
+    span {
+      font-weight: 600;
+    }
+  }
   &:hover {
     h5 {
       a {
@@ -154,8 +175,13 @@
       opacity: 1;
       animation: 700ms ease-in-out 0s normal none 1 running slideTop;
     }
+    .github-icon {
+      opacity: 1;
+      animation: 700ms ease-in-out 0s normal none 1 running slideTop;
+  }
   }
 }
+
 .filter {
   margin-bottom: 25px;
   padding-left: 0;
@@ -196,3 +222,5 @@
 .SRLThumbnailsContainer a {
   background-color: #fff !important;
 }
+
+

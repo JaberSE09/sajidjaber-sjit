@@ -4,62 +4,18 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const tabList = ["All", "Branding", "Photography", "Fashion", "Product"];
+const tabList = ["All", "Business", "Personal"];
 const AllPortfolioContent = [
   {
-    categories: ["Branding", "Fashion"],
-    img: "/img/portfolio/1.jpg",
-    title: "Motion Graphy",
-    subTitle: "Android App",
-    alterText: "Motion Graphy",
+    categories: ["Business", "All"],
+    img: "/img/portfolio/jimmyjay.png",
+    title: "Next Js Landing Page", 
+    subTitle: "Jimmy Jay Limo",
+    alterText: "Jimmy Jay Limo",
+    githubLink: "https://github.com/JaberSE09/jimmycab",
     portfolioLink:
-      "https://play.google.com/store/apps/details?id=com.alightcreative.motion&hl=en&gl=US",
-  },
-  {
-    categories: ["Photography", "Product"],
-    img: "/img/portfolio/3.jpg",
-    title: "E-Learning App",
-    subTitle: "Nuna ios App",
-    alterText: "Elearning App",
-    portfolioLink:
-      "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
-  },
-  {
-    categories: ["Branding", "Fashion"],
-    img: "/img/portfolio/2.jpg",
-    title: "Visual Design",
-    subTitle: "Themeforest Marke",
-    alterText: "Business Mockup",
-    portfolioLink:
-      "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
-  },
-  {
-    categories: ["Photography", "Product"],
-    img: "/img/portfolio/4.jpg",
-    title: "Business Card",
-    subTitle: "Graphicriver Market",
-    alterText: "E-Cosmetics",
-    portfolioLink:
-      "https://dribbble.com/shots/16545341-Imroz-Vue-JS-Creative-Agency-Portfolio-Template",
-  },
-  {
-    categories: ["Branding", "Fashion"],
-    img: "/img/portfolio/7.jpg",
-    title: "Code Editing",
-    subTitle: "Codecanyon Market",
-    alterText: "Bottle Illustration",
-    portfolioLink:
-      "https://dribbble.com/shots/16529158-Waxon-Personal-Portfolio-VueJS-Template-RTL",
-  },
-  {
-    categories: ["Photography", "Product"],
-    img: "/img/portfolio/6.jpg",
-    title: "Web Application",
-    subTitle: "Behance Shot",
-    alterText: "Web Application",
-    portfolioLink:
-      "https://dribbble.com/shots/16529226-Krozo-Personal-Portfolio-React-Template",
-  },
+      "https://www.jimmyjayluxuryshuttleandlimoservice.com/",
+  }
 ];
 
 const PortfolioAnimation = () => {
@@ -156,6 +112,14 @@ const PortfolioAnimation = () => {
                       rel="noopener noreferrer"
                     >
                       <span className="ti-link"></span>
+                    </a>
+                    <a
+                      href={val.githubLink}
+                      className="github-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="ti-github"></span>
                     </a>
                     {/* End .portfolio-icon */}
                   </div>
