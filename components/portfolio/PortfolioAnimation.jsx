@@ -3,6 +3,7 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const tabList = ["All", "Business", "Personal"];
 const AllPortfolioContent = [
@@ -15,6 +16,18 @@ const AllPortfolioContent = [
     githubLink: "https://github.com/JaberSE09/jimmycab",
     portfolioLink:
       "https://www.jimmyjayluxuryshuttleandlimoservice.com/",
+  },
+  {
+    categories: ["Business", "All"],
+    img: "/img/portfolio/saintmichealsvending.png",
+    title: "Next JS With Prismic CMS",
+    subTitle: "Saint Michael Vending",
+    alterText: "Saint Michael Vending",
+    portfolioLink: "https://saintmichaelvending.com/",
+    githubLink: "https://github.com/JaberSE09/banking",
+
+
+
   }
 ];
 
@@ -89,8 +102,8 @@ const PortfolioAnimation = () => {
                     <Item
                       original={val.img}
                       thumbnail={val.img}
-                      width={336}
-                      height={458}
+                      width={600}
+                      height={400}
                     >
                       {({ ref, open }) => (
                         <Image
@@ -105,22 +118,22 @@ const PortfolioAnimation = () => {
                         />
                       )}
                     </Item>
-                    <a
+                    <Link
                       href={val.portfolioLink}
                       className="portfolio-icon"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <span className="ti-link"></span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={val.githubLink}
                       className="github-icon"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <span className="ti-github"></span>
-                    </a>
+                    </Link>
                     {/* End .portfolio-icon */}
                   </div>
                 </div>
