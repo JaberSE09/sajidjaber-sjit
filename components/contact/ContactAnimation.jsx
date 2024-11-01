@@ -44,8 +44,8 @@ const Contact = () => {
           <div className="col-md-6">
             <div
               className="form-group"
-              data-aos="fade-up"
-              data-aos-duration="1200"
+              // data-aos="fade-up"
+              // data-aos-duration="1200"
             >
               <input
                 type="text"
@@ -69,8 +69,8 @@ const Contact = () => {
             <div
               className="form-group"
               data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="50"
+              // data-aos-duration="1200"
+              // data-aos-delay="50"
             >
               <input
                 type="email"
@@ -103,8 +103,8 @@ const Contact = () => {
             <div
               className="form-group"
               data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="100"
+              // data-aos-duration="1200"
+              // data-aos-delay="100"
             >
               <input
                 type="text"
@@ -126,9 +126,9 @@ const Contact = () => {
           <div className="col-12">
             <div
               className="form-group"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="150"
+              // data-aos="fade-up"
+              // data-aos-duration="1200"
+              // data-aos-delay="150"
             >
               <textarea
                 rows="4"
@@ -149,9 +149,9 @@ const Contact = () => {
 
           <div
             className="col-12"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="200"
+            // data-aos="fade-up"
+            // data-aos-duration="1200"
+            // data-aos-delay="200"
           >
             <div className="btn-bar">
               <button className="px-btn px-btn-theme">Send your message</button>
