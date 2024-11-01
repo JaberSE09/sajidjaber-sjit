@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="col-md-6">
             <div
               className="form-group"
-              data-aos="fade-up"
+              // data-aos="fade-up"
               // data-aos-duration="1200"
               // data-aos-delay="50"
             >
