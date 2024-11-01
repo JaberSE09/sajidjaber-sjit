@@ -43,7 +43,7 @@ const Footer = () => {
             >
               Sajid Jaber
             </Link>
-            all right reserved
+           &nsbr; all right reserved
           </p>
         </div>
         {/* End .col */}
