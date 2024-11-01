@@ -146,52 +146,14 @@ const HomeFour = () => {
                   <div className="icon">
                     <i className="ti-map"></i>
                   </div>
-                  <span className="media-body">
-                    123 Stree New York City , <br />
-                    United States Of America <br />
-                    NY 750065.
-                  </span>
+                  <span className="media-body">Based In USA</span>
                 </div>
-                {/* End media */}
-
-                <div
-                  className="media"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="100"
-                >
-                  <div className="icon">
-                    <i className="ti-email"></i>
-                  </div>
-                  <span className="media-body">
-                    support@domain.com
-                    <br />
-                    info@domain.com
-                  </span>
-                </div>
-                {/* End media */}
-
-                <div
-                  className="media"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="150"
-                >
-                  <div className="icon">
-                    <i className="ti-mobile"></i>
-                  </div>
-                  <span className="media-body">
-                    +044 966 9696 636
-                    <br />
-                    +044 966 9696 636
-                  </span>
-                </div>
-                {/* End media */}
+                {/* End .col */}
               </div>
             </div>
-            {/* End .col */}
           </div>
         </div>
+        {/* End .row */}
       </section>
       {/* End Contact */}
 

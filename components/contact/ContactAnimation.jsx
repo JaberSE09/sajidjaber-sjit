@@ -24,7 +24,6 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        console.log("Email sent successfully");
         resetForm();
       } else {
         console.error("Failed to send email");
@@ -54,7 +53,9 @@ const Contact = () => {
                 name="name"
                 className="form-control"
                 placeholder="Full name"
+                required
                 {...register("name", { required: true })}
+                
               />
               <label className="form-label">Name</label>
               {errors.name && errors.name.type === "required" && (
@@ -77,6 +78,7 @@ const Contact = () => {
                 placeholder="Email address"
                 id="email"
                 name="email"
+                required
                 {...register(
                   "email",
                   {
@@ -110,6 +112,7 @@ const Contact = () => {
                 placeholder="Subject"
                 id="subject"
                 name="subject"
+                required
                 {...register("subject", { required: true })}
               />
               <label className="form-label">Subject</label>
@@ -133,6 +136,7 @@ const Contact = () => {
                 name="comment"
                 className="form-control"
                 placeholder="Type comment"
+                required
                 {...register("comment", { required: true })}
               ></textarea>
               <label className="form-label">Comment</label>
