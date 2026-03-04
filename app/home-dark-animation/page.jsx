@@ -10,8 +10,9 @@ import Footer from "@/components/footer/FooterAnimation";
 import HeaderFluid from "@/components/header/HeaderFluid";
 
 export const metadata = {
-  title: "Portfolio - Sajid Jaber",
-  description: "Portfolio - Sajid Jaber",
+  title: "Sajid Jaber — Milwaukee Web Developer & IT Professional",
+  description:
+    "Milwaukee-based web developer and IT professional. Founder of SJ IT LLC. Specializing in Next.js, React, Tailwind CSS, SEO, and small business digital solutions.",
 };
 const HomeFour = () => {
   return (
@@ -137,16 +138,49 @@ const HomeFour = () => {
                   </p>
                 </div>
 
-                <div
-                  className="media"
-                  // data-aos="fade-up"
-                  // data-aos-duration="1200"
-                  // data-aos-delay="50"
-                >
+                <div className="media">
                   <div className="icon">
                     <i className="ti-map"></i>
                   </div>
-                  <span className="media-body">Based In USA</span>
+                  <span className="media-body">West Allis / Milwaukee, WI</span>
+                </div>
+
+                <div className="media mt-3">
+                  <div className="icon">
+                    <i className="ti-email"></i>
+                  </div>
+                  <span className="media-body">
+                    <a href="mailto:sajidjaber@yahoo.com" style={{ color: "inherit" }}>
+                      sajidjaber@yahoo.com
+                    </a>
+                  </span>
+                </div>
+
+                <div className="media mt-3">
+                  <div className="icon">
+                    <i className="ti-mobile"></i>
+                  </div>
+                  <span className="media-body">
+                    <a href="tel:+14143801606" style={{ color: "inherit" }}>
+                      (414) 380-1606
+                    </a>
+                  </span>
+                </div>
+
+                <div className="media mt-3">
+                  <div className="icon">
+                    <i className="ti-linkedin"></i>
+                  </div>
+                  <span className="media-body">
+                    <a
+                      href="https://linkedin.com/in/sajidjaber"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "inherit" }}
+                    >
+                      linkedin.com/in/sajidjaber
+                    </a>
+                  </span>
                 </div>
                 {/* End .col */}
               </div>

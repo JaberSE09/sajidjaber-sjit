@@ -37,13 +37,13 @@ const Footer = () => {
           <p>
             © {new Date().getFullYear()} copyright{" "}
             <Link
-              href="sajidjaber.com"
+              href="https://sajidjaber.com"
               target="_blank"
               rel="noreferrer"
             >
               Sajid Jaber
             </Link>
-           &nsbr; all right reserved
+            {" "}all rights reserved
           </p>
         </div>
         {/* End .col */}
