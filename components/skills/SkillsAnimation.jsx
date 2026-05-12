@@ -24,11 +24,6 @@ const Skills = () => {
               <h6>Web Development - Certificate</h6>
               <p>University of Wisconsin-Madison</p>
             </li>
-            <li>
-              <span className="dark-bg">2023-2024</span>
-              <h6>Software Engineer - Bootcamp</h6>
-              <p>SpringBoard</p>
-            </li>
           </ul>
         </div>
 
@@ -50,8 +45,8 @@ const Skills = () => {
             </li>
             <li>
               <span className="theme-bg">2018-Present</span>
-              <h6>Web Developer</h6>
-              <p>Freelancer</p>
+              <h6>Founder &amp; Lead Developer</h6>
+              <p>SJ IT LLC</p>
             </li>
           </ul>
         </div>
