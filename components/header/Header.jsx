@@ -55,6 +55,7 @@ const Header = () => {
             <button
               className="navbar-toggler"
               type="button"
+              aria-label="Toggle navigation menu"
               onClick={handleClick}
             >
               <div className={click ? "hamburger active" : "hamburger"}>

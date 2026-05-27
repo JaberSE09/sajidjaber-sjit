@@ -11,6 +11,7 @@ const SocialShare = [
  {
   Social: <FaLinkedinIn />,
   link: "https://www.linkedin.com/in/sajidjaber",
+  label: "Sajid Jaber on LinkedIn",
  },
 ];
 
@@ -22,7 +23,7 @@ const Social = () => {
       
       {SocialShare.map((val, i) => (
 
-        <Link key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
+        <Link key={i} href={`${val.link}`} rel="noreferrer" target="_blank" aria-label={val.label}>
           {val.Social}
         </Link>
       ))}
