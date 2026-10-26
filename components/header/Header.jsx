@@ -43,11 +43,12 @@ const Header = () => {
             {/* Brand */}
             <Link href="/">
               <Image
-                width={122}
-                height={35}
+                width={160}
+                height={40}
                 className="navbar-brand"
-                src="/img/logo/logo-light.svg"
-                alt="brand logo"
+                src={navbar ? "/img/logo/logo.svg" : "/img/logo/logo-light.svg"}
+                alt="Sajid Jaber"
+                priority
               />
             </Link>
             {/* / */}
@@ -75,10 +76,10 @@ const Header = () => {
             >
               <Link href="/" className="sidebar-logo">
                 <Image
-                  width={122}
-                  height={35}
+                  width={160}
+                  height={40}
                   src="/img/logo/logo-light.svg"
-                  alt="brand"
+                  alt="Sajid Jaber"
                 />
               </Link>
               <ul className="anchor_nav navbar-nav ml-auto scrollspyLinks">

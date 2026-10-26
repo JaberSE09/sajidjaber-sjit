@@ -50,11 +50,12 @@ const HeaderFluid = () => {
             {/* Brand */}
             <Link href="/">
               <Image
-                width={122}
-                height={70}
+                width={160}
+                height={40}
                 className="navbar-brand"
-                src="/img/logo/logosjit.png"
-                alt="brand logo"
+                src="/img/logo/logo-light.svg"
+                alt="Sajid Jaber"
+                priority
               />
             </Link>
             {/* / */}
@@ -82,10 +83,10 @@ const HeaderFluid = () => {
             >
               <Link href="/" className="sidebar-logo">
                 <Image
-                  width={122}
-                  height={35}
-                  src="/img/logo/logosjit.png"
-                  alt="brand"
+                  width={160}
+                  height={40}
+                  src="/img/logo/logo-light.svg"
+                  alt="Sajid Jaber"
                 />
               </Link>
               <ul className="anchor_nav navbar-nav ml-auto scrollspyLinks">
