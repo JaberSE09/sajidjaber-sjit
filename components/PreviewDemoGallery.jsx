@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const tabList = ["All", "Light", "Dark", "Animation Effect"];
 export default function SimpleSlider() {
@@ -54,17 +54,10 @@ export default function SimpleSlider() {
   ];
 
   const [currentTab, setCurrentTab] = useState(tabList[0]);
-  const [filteredItems, setFilteredItems] = useState(AllDemos);
-  useEffect(() => {
-    if (currentTab == "All") {
-      setFilteredItems(AllDemos);
-    } else {
-      const filtered = [
-        ...AllDemos.filter((elm) => elm.categories.includes(currentTab)),
-      ];
-      setFilteredItems(filtered);
-    }
-  }, [currentTab]);
+  const filteredItems =
+    currentTab === "All"
+      ? AllDemos
+      : AllDemos.filter((elm) => elm.categories.includes(currentTab));
   return (
     <>
       <div className="portfolio-filter-01">
