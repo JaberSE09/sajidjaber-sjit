@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="Sajid Jaber">
+  <title>Sajid Jaber</title>
+  <defs>
+    <linearGradient id="sjGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B4DCA"/>
+      <stop offset="100%" stop-color="#5BA8F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="39.6" fill="url(#sjGrad)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="14.77" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70.31 46.41 L36.56 90.00 L70.31 133.59"/>
+    <path d="M104.06 46.41 L75.94 133.59"/>
+    <path d="M109.69 46.41 L143.44 90.00 L109.69 133.59"/>
+  </g>
+</svg>

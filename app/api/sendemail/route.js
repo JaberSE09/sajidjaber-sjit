@@ -1,11 +1,7 @@
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
-// Load environment variables
-import { loadEnvConfig } from '@next/env';
-loadEnvConfig(process.cwd());
-
-export async function POST(req = NextRequest, res = NextResponse) {
+export async function POST(req) {
   try {
     const body = await req.json();
     const { name, subject, email, comment } = body;

@@ -30,18 +30,49 @@ const About = () => {
           <div className="typo-box about-me">
             <h3>Sajid Jaber</h3>
             <h5>
-              A Lead <span className="color-theme">Next JS Full Stack Developer</span> based in{" "}
-              <span className="color-theme">USA</span>
+              Full Stack Developer &amp; Founder of{" "}
+              <span className="color-theme">SJ IT LLC</span> — Milwaukee, WI
             </h5>
             <p>
-              I design and develop services for customers of all sizes,
-              specializing in creating stylish, modern websites, web services
-              and online stores. My passion is to design digital user
-              experiences through the bold interface and meaningful
-              interactions. Check out my Portfolio
+              7+ years building modern web apps, SaaS platforms, and digital
+              solutions for 50+ clients across industries. I specialize in
+              Next.js 15, React, TypeScript, and AI-powered applications —
+              delivering fast, scalable products with clean code and real
+              business impact.
             </p>
             <div className="row about-list">
-              {/* End .col */}
+              <div className="col-sm-6">
+                <ul>
+                  <li>
+                    <span>Experience</span>
+                    <strong>7+ Years</strong>
+                  </li>
+                  <li>
+                    <span>Clients Served</span>
+                    <strong>50+</strong>
+                  </li>
+                  <li>
+                    <span>Projects Delivered</span>
+                    <strong>50+</strong>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-sm-6">
+                <ul>
+                  <li>
+                    <span>Location</span>
+                    <strong>Milwaukee, WI</strong>
+                  </li>
+                  <li>
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </li>
+                  <li>
+                    <span>Email</span>
+                    <strong>info@mysjit.com</strong>
+                  </li>
+                </ul>
+              </div>
             </div>
             {/* End .row */}
             <div className="btn-bar">
@@ -52,6 +83,14 @@ const About = () => {
                 download
               >
                 Download CV
+              </Link>
+              <Link
+                className="px-btn px-btn-white ml-3"
+                href="https://meetings-na2.hubspot.com/sajid-jaber"
+                target="_blank"
+                style={{ marginLeft: "12px" }}
+              >
+                Book a Call
               </Link>
             </div>
           </div>

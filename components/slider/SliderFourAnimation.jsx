@@ -29,7 +29,7 @@ const Slider = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              Sajid Jaber
+              Sajid Jaber — Milwaukee Web Developer &amp; IT Professional
             </h1>
             <div className="flex flex-col md:flex-row justify-center mt-6 space-y-2 md:space-y-0 md:space-x-6">
               <span
@@ -38,7 +38,7 @@ const Slider = () => {
                 data-aos-duration="1200"
                 data-aos-delay="150"
               >
-                Full Stack Web Designer
+                Full Stack Web Developer
               </span>
               <span
                 className="font-alt text-base md:text-lg text-gray-300"
@@ -46,7 +46,7 @@ const Slider = () => {
                 data-aos-duration="1200"
                 data-aos-delay="200"
               >
-                App Developer
+                IT Professional
               </span>
               <span
                 className="font-alt text-base md:text-lg text-gray-300"
@@ -54,8 +54,17 @@ const Slider = () => {
                 data-aos-duration="1200"
                 data-aos-delay="250"
               >
-                UI/UX Designer
+                Founder, SJ IT LLC
               </span>
+            </div>
+            <div className="mt-8" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+              <a
+                href="mailto:sajidjaber@yahoo.com"
+                className="px-btn px-btn-theme"
+                style={{ display: "inline-block", padding: "12px 32px", fontSize: "1rem", fontWeight: "600", borderRadius: "4px" }}
+              >
+                Hire Me
+              </a>
             </div>
           </div>
         </div>

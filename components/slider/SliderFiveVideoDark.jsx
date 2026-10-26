@@ -55,7 +55,7 @@ const Slider = () => {
         </div>
 
         <div className="go-to go-to-next">
-          <a href="#about">
+          <a href="#about" aria-label="Scroll to about section">
             <span></span>
           </a>
         </div>

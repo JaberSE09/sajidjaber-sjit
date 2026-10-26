@@ -24,11 +24,6 @@ const Skills = () => {
               <h6>Web Development - Certificate</h6>
               <p>University of Wisconsin-Madison</p>
             </li>
-            <li>
-              <span className="dark-bg">2023-2024</span>
-              <h6>Software Engineer - Bootcamp</h6>
-              <p>SpringBoard</p>
-            </li>
           </ul>
         </div>
 
@@ -50,8 +45,8 @@ const Skills = () => {
             </li>
             <li>
               <span className="theme-bg">2018-Present</span>
-              <h6>Web Developer</h6>
-              <p>Freelancer</p>
+              <h6>Founder &amp; Lead Developer</h6>
+              <p>SJ IT LLC</p>
             </li>
           </ul>
         </div>
@@ -67,10 +62,11 @@ const Skills = () => {
           <ul className="skill-list text-center">
             <li>Next.js</li>
             <li>React</li>
+            <li>TypeScript</li>
             <li>JavaScript (ES6+)</li>
-            <li>HTML5 & CSS3 (SASS, CSS Modules)</li>
-            <li>Responsive Design</li>
+            <li>HTML5 &amp; CSS3 (SASS, CSS Modules)</li>
             <li>Tailwind CSS, Bootstrap</li>
+            <li>Responsive Design</li>
           </ul>
         </div>
 
@@ -82,9 +78,11 @@ const Skills = () => {
           <ul className="skill-list text-center">
             <li>Node.js</li>
             <li>Express.js</li>
-            <li>RESTful APIs & GraphQL</li>
-            <li>Authentication (JWT, OAuth)</li>
-            <li>SSR & SSG with Next.js</li>
+            <li>Sanity CMS</li>
+            <li>Clerk (Auth)</li>
+            <li>Stripe</li>
+            <li>RESTful APIs &amp; GraphQL</li>
+            <li>SSR &amp; SSG with Next.js</li>
           </ul>
         </div>
 
@@ -94,9 +92,10 @@ const Skills = () => {
             <h6 className="font-weight-bold">Database Management</h6>
           </div>
           <ul className="skill-list text-center">
-            <li>SQL/MySQL, PostgreSQL</li>
+            <li>PostgreSQL</li>
+            <li>Prisma ORM</li>
+            <li>SQL/MySQL</li>
             <li>NoSQL (MongoDB, Firebase)</li>
-            <li>ORM tools (Prisma, Sequelize)</li>
           </ul>
         </div>
 
@@ -106,10 +105,11 @@ const Skills = () => {
             <h6 className="font-weight-bold">DevOps & Deployment</h6>
           </div>
           <ul className="skill-list text-center">
-            <li>Git/GitHub</li>
+            <li>Git / GitHub</li>
+            <li>Vercel</li>
             <li>CI/CD Pipelines</li>
-            <li>Docker & Kubernetes</li>
-            <li>Cloud Services (AWS, Vercel, DigitalOcean)</li>
+            <li>Docker &amp; Kubernetes</li>
+            <li>AWS, DigitalOcean</li>
             <li>Linux/Unix systems</li>
           </ul>
         </div>
@@ -120,11 +120,11 @@ const Skills = () => {
             <h6 className="font-weight-bold">Other Skills</h6>
           </div>
           <ul className="skill-list">
+            <li>SEO Optimization</li>
             <li>Agile/Scrum</li>
-            <li>Unit & Integration Testing (Jest, Cypress)</li>
-            <li>Collaboration & Communication</li>
+            <li>Unit &amp; Integration Testing (Jest, Cypress)</li>
             <li>Project Management (JIRA, Trello)</li>
-            <li>Problem-Solving & Analytical Skills</li>
+            <li>Problem-Solving &amp; Analytical Skills</li>
           </ul>
         </div>
       </div>
