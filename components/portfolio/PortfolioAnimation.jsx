@@ -2,7 +2,7 @@
 
 import { Gallery, Item } from "react-photoswipe-gallery";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 const tabList = ["All", "Business", "Personal"];
@@ -39,19 +39,12 @@ const AllPortfolioContent = [
 
 const PortfolioAnimation = () => {
   const [currentTab, setCurrentTab] = useState(tabList[0]);
-  const [filteredItems, setFilteredItems] = useState(AllPortfolioContent);
-  useEffect(() => {
-    if (currentTab == "All") {
-      setFilteredItems(AllPortfolioContent);
-    } else {
-      const filtered = [
-        ...AllPortfolioContent.filter((elm) =>
+  const filteredItems =
+    currentTab === "All"
+      ? AllPortfolioContent
+      : AllPortfolioContent.filter((elm) =>
           elm.categories.includes(currentTab)
-        ),
-      ];
-      setFilteredItems(filtered);
-    }
-  }, [currentTab]);
+        );
   return (
     <div className="positon-relative">
       <div className="portfolio-filter-01">
