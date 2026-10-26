@@ -45,7 +45,9 @@
 }
 .main-header {
   .navbar-brand {
-    max-width: 75px;
+    max-width: 170px;
+    width: auto;
+    height: auto;
     margin: 19px 20px;
     transition: 0.3s;
   }
@@ -254,10 +256,8 @@
     }
   }
   .navbar-brand {
-    filter: invert(1);
-    @include down-md {
-      filter: invert(0);
-    }
+    /* Colored SVG logo — do not invert (would distort the gradient mark) */
+    filter: none;
   }
   @include down-md {
     .header-transparent {
