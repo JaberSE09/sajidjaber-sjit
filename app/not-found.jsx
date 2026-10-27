@@ -1,54 +1,25 @@
 import Link from "next/link";
-import Footer from "@/components/footer/Footer";
-import Image from "next/image";
+import SiteFooter from "@/components/site/SiteFooter";
+import SiteHeader from "@/components/site/SiteHeader";
 
 export const metadata = {
-  title: "Not Found || React Personal Portfolio Template",
+  title: "Page not found — Sajid Jaber",
 };
-const NotFound = () => {
+
+export default function NotFound() {
   return (
     <>
-      <section className="error-page-wrapper">
-        <div className="container">
-          <div className="row justify-content-center full-screen align-items-center">
-            <div className="col-lg-8 text-center">
-              <div className="inner">
-                <h1 className="display-3 white-color m-15px-b">
-                  404 - Page Not Found..
-                </h1>
-                <p className="h4">
-                  Whoops, it looks like the page you request wasn't found.
-                </p>
-                <div className="m-30px-tb">
-                  <Image
-                    width="1024"
-                    height="538"
-                    src="/img/404-page.svg"
-                    alt="page not found"
-                  />
-                </div>
-                <div className="btn-bar mt-4">
-                  <Link className="px-btn px-btn-theme" href="/">
-                    BACK TO HOME
-                  </Link>
-                  {/* End purchase_button */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* End Error Page Wrapper */}
-
-      {/* Footer */}
-      <footer className="footer white">
-        <div className="container">
-          <Footer />
-        </div>
-      </footer>
-      {/* End footer */}
+      <SiteHeader />
+      <main id="main-content" className="mx-auto max-w-content px-6 py-24">
+        <h1 className="section-title">Page not found</h1>
+        <p className="mt-4 max-w-xl text-lg">
+          That page is not on this site.
+        </p>
+        <Link href="/" className="btn-accent mt-8 h-[52px] text-base">
+          Back home
+        </Link>
+      </main>
+      <SiteFooter />
     </>
   );
-};
-
-export default NotFound;
+}
