@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { IconArrow } from "@/components/site/icons";
 
 export default function Hero() {
@@ -38,8 +39,15 @@ export default function Hero() {
           className="absolute bottom-0 left-0 h-[70%] w-[70%] bg-accent"
           aria-hidden="true"
         />
-        <div className="relative flex aspect-[4/5] items-center justify-center border border-line bg-canvas text-sm font-semibold">
-          Photo coming soon
+        <div className="relative aspect-[4/5] border border-line bg-canvas">
+          <Image
+            src="/img/sajid-portrait.png"
+            alt="Illustrated portrait of Sajid Jaber"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 420px"
+            priority
+          />
         </div>
       </div>
     </section>

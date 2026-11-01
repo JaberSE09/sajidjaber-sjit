@@ -62,8 +62,8 @@ export const projects = [
     whatItIs:
       "Website and local search for a home-service business, aimed at getting the phone to ring.",
     built: [],
-    image: null,
-    imageAlt: null,
+    image: "/img/portfolio/allgaragedoor-hero.jpg",
+    imageAlt: "All Garage Door Repair website",
     url: null,
     client: null,
     role: null,
